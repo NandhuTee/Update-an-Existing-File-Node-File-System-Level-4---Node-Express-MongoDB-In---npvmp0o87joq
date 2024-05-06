@@ -6,7 +6,7 @@ const updateFile = async (fileName, fileContent) => {
     let existingContent =await fs.readFile(fileName,'utf8');
     let updateContent = existingContent +fileContent;
     await fs.writeFile(fileName, updateContent,'utf8');
-    return updatedContent;
+    return updateContent;
   // write code here
   // dont change function name
   }catch(error){
